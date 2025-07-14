@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shruthi Aeluka - Portfolio</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="profile-img">
+              <img src="shruthi.jpg" alt="Profile Picture" >
+            </div>
+
+            <h1>Shruthi Aeluka</h1>
+            <p>Computer Science Engineering Student </p>
+            <div class="contact-info">
+                <a href="mailto:shruthiaeluka06@gmail.com" class="contact-item">
+                    shruthiaeluka06@gmail.com
+                </a>
+                <a href="https://linkedin.com/in/shruthi-aetala-9a7ba6318" class="contact-item" target="_blank">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/ShruthiReddy06" class="contact-item" target="_blank">
+                    GitHub
+                </a>
+            </div>
+            
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav">
+            <button class="nav-btn active" onclick="showSection('about')">About</button>
+            <button class="nav-btn" onclick="showSection('education')">Education</button>
+            <button class="nav-btn" onclick="showSection('skills')">Skills</button>
+            <button class="nav-btn" onclick="showSection('certifications')">Certifications</button>
+            <button class="nav-btn" onclick="showSection('projects')">Projects</button>
+            <button class="nav-btn" onclick="showSection('internships')">Internships</button>
+            <button class="nav-btn" onclick="showSection('experience')">Experience</button>           
+            <button class ="nav-btn" onclick = "showSection('contact')">Contact</button>
+        </div>
+
+        <!-- About Section -->
+        <div id="about" class="section active">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I'm a passionate Computer Science Engineering student with a strong foundation in full-stack development and emerging technologies. Currently pursuing my degree while gaining practical experience through internships</p>
+                <br>
+                <p>I enjoy building innovative solutions and have worked on various projects ranging from web applications to machine learning implementations. My goal is to leverage technology to create meaningful impact in the digital world.</p>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3> Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>AI-DRIVEN CROP PLANNING</h3>
+                    <ul>
+                        <li>Developed a website that predicts the best 5 crops to plant based on soil data, location, and water availability.</li>
+                        <li>It also plans the crop growth, investment and profits of the selected crop.</li>
+                        <li>Developed a chatbot for the users to know about any crop they want to grow.</li>
+                        <li>Designed the website using HTML, CSS ,javaScript and implemented backend logic in Python (Machine Learning).</li>
+                        <li>Added Crop Suitability Index (CSI) to suggest improvements for soil conditions.</li>
+                        
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">html</span>
+                        <span class="tech-tag">css</span>
+                        <span class="tech-tag">javascript</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>SKILLTRADE </h3>
+                    <ul>
+                        <li>Designed and developed a personal portfolio website to showcase academic background, technical skills, and major projects.</li>
+                        <li>Implemented a responsive user interface with smooth navigation and a clean layout for optimal viewing across devices.</li>
+                        <li>Integrated GitHub repositories and social media links for easy access to work samples. Deployed the project on GitHub Pages.</li>
+                        <li>Built using HTML, CSS, JavaScript, PHP (backend), and MySQL/SQLite (database) with Visual Studio Code and XAMPP for local development.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">PHP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Internships Section -->
+        <div id="internships" class="section">
+            <h2>Internships</h2>
+            <div class="internship-grid">
+                <div class="internship-card">
+                    <h3>TechLead Intern</h3>
+                    <div class="company">Swecha Organisation</div>
+                    <div class="internship-details">
+                        <p><strong>Duration:</strong> jul 2025 - aug 2025</p>
+                        <p><strong>Key Responsibilities:</strong></p>
+                        <ul style="margin-top: 10px; padding-left: 20px;">
+                            <li>Lead the development of Al pipelines using Python, NLP, and Transformer architectures.</li>
+                            <li>Guide and contribute to the training and fine-tuning of Al models</li>
+                            <li>Contribute to Indic language dataset curation, annotation, and model evaluation.</li>
+                            <li>Collaborate on building impactful Al solutions that support local languages and communities.</li>
+                            <li>Participate in deploying Al systems that demonstrate societal impact at scale.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="internship-card">
+                    <h3>Software Developer Intern</h3>
+                    <div class="company">BlueStock Fintech</div>
+                    <div class="internship-details">
+                        <p><strong>Duration:</strong> 1 May 2025 to 30 June 2025</p>
+                        <p><strong>Key Responsibilities:</strong></p>
+                        <ul style="margin-top: 10px; padding-left: 20px;">
+                            <li>Develop a web application</li>
+                            <li>Hands-on experience in a dynamic fintech environment</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div id="experience" class="section">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <p>Looking for opportunities that enhance my technical experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div id="education" class="section">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Bachelor of Technology - Computer Science Engineering</h3>
+                    <div class="company">Vidya Jyothi Institute Of Technology</div>
+                    <div class="date">2023-2027</div>
+                    <p>CGPA: 9.4/10.0</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Intermediate Education</h3>
+                    <div class="company">Pragati Junior College</div>
+                    <div class="date">2021 - 2023</div>
+                    <p>Marks: 940/1000</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>School</h3>
+                    <div class="company">Little Flower High School</div>
+                    <div class="date">2011-2021</div>
+                    <p>CGPA: 10/10</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div id="certifications" class="section">
+            <h2>Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-item" >
+                    <h4>Python Essentials</h4>
+                    <p>Python essentials 1,2 by Cisco (April 2025)</p>
+                </div>
+                <div class="cert-item">
+                    <h4>Certificate of achievement</h4>
+                    <p>Certificate of achievement for qualifying as a finalist at sparkcamp conducted by Vishwam AI.</p>
+                </div>
+                <div class="cert-item">
+                    <h4>Google AI-Essentials</h4>
+                    <p>Google AI-Essentials by Google: Coursera (March 2025)</p>
+                </div>
+                <div class="cert-item">
+                    <h4>Cybersecurity Analyst</h4>
+                    <p>Cybersecurity Analyst job simulation by Tata : Forage(Aug,2024)</p>
+                </div>
+                <div class="cert-item">
+                    <h4>Data Analytics and visualization</h4>
+                    <p>Data Analytics and visualization job simulation by Accenture : Forage (Oct,2024)</p>
+                </div>
+                <div class="cert-item">
+                    <h4>Codetantra certificates </h4>
+                    <p>Codetantra certificates - C, python, SQL, DSA, Java</p>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Section -->
+        <div id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info-section">
+                    <h3>Get In Touch</h3>
+                    <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and innovation.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-icon"></div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:shruthiaeluka06@gmail.com">shruthiaeluka06@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <div class="contact-icon"></div>
+                            <div class="contact-text">
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/shruthi-aetala-9a7ba6318" target="_blank">linkedin.com/in/shruthi-aetala-9a7ba6318</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <div class="contact-icon"></div>
+                            <div class="contact-text">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/ShruthiReddy06" target="_blank">github.com/ShruthiReddy06</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="contact-form-section">
+                    <h3>Send Message</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -2,292 +2,513 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shruthi Aeluka - Portfolio</title>
-    <link rel ="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruthi Aeluka | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <div class="profile-img">
-              <img src="shruthi.jpg" alt="Profile Picture" >
-            </div>
-
-            <h1>Shruthi Aeluka</h1>
-            <p>Computer Science Engineering Student </p>
-            <div class="contact-info">
-                <a href="mailto:shruthiaeluka06@gmail.com" class="contact-item">
-                    shruthiaeluka06@gmail.com
-                </a>
-                <a href="https://linkedin.com/in/shruthi-aetala-9a7ba6318" class="contact-item" target="_blank">
-                    LinkedIn
-                </a>
-                <a href="https://github.com/ShruthiReddy06" class="contact-item" target="_blank">
-                    GitHub
-                </a>
-            </div>
-            
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">SA</div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <!-- Navigation -->
-        <div class="nav">
-            <button class="nav-btn active" onclick="showSection('about')">About</button>
-            <button class="nav-btn" onclick="showSection('education')">Education</button>
-            <button class="nav-btn" onclick="showSection('skills')">Skills</button>
-            <button class="nav-btn" onclick="showSection('certifications')">Certifications</button>
-            <button class="nav-btn" onclick="showSection('projects')">Projects</button>
-            <button class="nav-btn" onclick="showSection('internships')">Internships</button>
-            <button class="nav-btn" onclick="showSection('experience')">Experience</button>           
-            <button class ="nav-btn" onclick = "showSection('contact')">Contact</button>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">SHRUTHI AELUKA</h1>
+                <p class="hero-subtitle">Computer Science Student | Web Developer | Data Science Enthusiast</p>
+                <p class="hero-tagline">Motivated Computer Science student with a strong interest in Data Science and AI Engineering</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn--primary btn-hero">View Projects</a>
+                    <a href="#contact" class="btn btn--outline btn-hero">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/shruthi-aeluka-952ba428a" target="_blank" aria-label="LinkedIn" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/ShruthiReddy06" target="_blank" aria-label="GitHub" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://shruthireddy06.github.io/portfolio/" target="_blank" aria-label="Portfolio" class="social-icon">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+            </div>
         </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
 
-        <!-- About Section -->
-        <div id="about" class="section active">
-            <h2>About Me</h2>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <p>I'm a passionate Computer Science Engineering student with a strong foundation in full-stack development and emerging technologies. Currently pursuing my degree while gaining practical experience through internships</p>
-                <br>
-                <p>I enjoy building innovative solutions and have worked on various projects ranging from web applications to machine learning implementations. My goal is to leverage technology to create meaningful impact in the digital world.</p>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                         <img src="profile.jpg" alt="Shruthi Aeluka" class="profile-img">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-intro">Hello! I'm Shruthi Aeluka, a passionate Computer Science student specializing in web development, data science, and artificial intelligence. I thrive on transforming complex problems into elegant, user-friendly solutions.</p>
+                    <p>With a strong foundation in both frontend and backend technologies, I've developed numerous projects ranging from civic platforms to AI-powered applications. My journey in tech is driven by curiosity and a commitment to continuous learning.</p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">9.25</div>
+                            <div class="stat-label">CGPA/10</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3rd</div>
+                            <div class="stat-label">Year CSE</div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Education Section -->
+<section id="education" class="section education-section">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        <!-- Education 1 -->
+        <div class="education-card">
+            <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="education-content">
+                <h3 class="education-degree">B.Tech in Computer Science Engineering</h3>
+                <p class="education-institution">Vidya Jyothi Institute of Technology, Hyderabad</p>
+                <div class="education-details">
+                    <span class="education-duration"><i class="far fa-calendar"></i> 2023 - Present</span>
+                    <span class="education-year"><i class="fas fa-book-reader"></i> 3rd Year</span>
+                    <span class="education-cgpa"><i class="fas fa-award"></i> CGPA: 9.25/10</span>
+                </div>
             </div>
         </div>
 
-        <!-- Skills Section -->
-        <div id="skills" class="section">
-            <h2>Technical Skills</h2>
+        <!-- Education 2 -->
+        <div class="education-card">
+            <div class="education-icon">
+                <i class="fas fa-school"></i>
+            </div>
+            <div class="education-content">
+                <h3 class="education-degree">Intermediate (MPC)</h3>
+                <p class="education-institution">Pragathi Junior College, Nalgonda</p>
+                <div class="education-details">
+                    <span class="education-duration"><i class="far fa-calendar"></i> 2021 - 2023</span>
+                    <span class="education-cgpa"><i class="fas fa-award"></i> Marks: 940/1000</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education 3 -->
+        <div class="education-card">
+            <div class="education-icon">
+                <i class="fas fa-school"></i>
+            </div>
+            <div class="education-content">
+                <h3 class="education-degree">School</h3>
+                <p class="education-institution">Little Flower School, Nalgonda</p>
+                <div class="education-details">
+                    <span class="education-duration"><i class="far fa-calendar"></i> 2011-2021</span>
+                    <span class="education-cgpa"><i class="fas fa-award"></i> CGPA: 10/10</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills &amp; Technologies</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3> Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">C</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">MySQL</span>
+                    <h3 class="category-title"><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C</span>
+                        </div>                                          
                     </div>
                 </div>
+
                 <div class="skill-category">
-                    <h3>Web Technologies</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Node.js</span>
+                    <h3 class="category-title"><i class="fas fa-laptop-code"></i> Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-tags">
+                            <span class="skill-tag">html</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">REACT</span>
+                        </div>                                          
                     </div>
                 </div>
+
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <h3 class="category-title"><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-items">
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-tools"></i> Tools &amp; Platforms</h3>
+                    <div class="skill-items">
+                        <div class="skill-tags">
+                            <span class="skill-tag">git</span>
+                            <span class="skill-tag">github</span>
+                            <span class="skill-tag">vscode</span>
+                            <span class="skill-tag">Xampp</span>
+                            <span class="skill-tag">POWER BI</span>
+                        </div>                                          
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-brain"></i> Core Competencies</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Data Structures &amp; Algorithms</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Problem-Solving</span>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Projects Section -->
-        <div id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>AI-DRIVEN CROP PLANNING</h3>
-                    <ul>
-                        <li>Developed a website that predicts the best 5 crops to plant based on soil data, location, and water availability.</li>
-                        <li>It also plans the crop growth, investment and profits of the selected crop.</li>
-                        <li>Developed a chatbot for the users to know about any crop they want to grow.</li>
-                        <li>Designed the website using HTML, CSS ,javaScript and implemented backend logic in Python (Machine Learning).</li>
-                        <li>Added Crop Suitability Index (CSI) to suggest improvements for soil conditions.</li>
-                        
-                    </ul>
-                    <div class="tech-stack">
-                        <span class="tech-tag">html</span>
-                        <span class="tech-tag">css</span>
-                        <span class="tech-tag">javascript</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Flask</span>
-                        
+    </section>
+   
+    <!-- Internship experience -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Internships</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div>
+                                    <h3 class="experience-title">Software Developer Engineer Intern</h3>
+                                    <p class="experience-company">Blue Stock Fintech</p>
+                                </div>
+                                <span class="experience-duration">May 2025 - June 2025</span>
+                            </div>
+                            <ul class="experience-description">
+                                <li>Designed and developed interactive front-end web application using React.js, delivering all project milestones on time</li>
+                                <li>Built interactive interface to display stock information for selected companies, enhancing user experience and data accessibility</li>
+                            </ul>
+                            <div class="credential">Credential ID: BFSD23320</div>
+                            <a href="https://drive.google.com/file/d/1c7PxyfiTJNQsdxh_YMjOmMOjL05eNvbp/view?usp=drive_link" target="_blank" class="certificate-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                 </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div>
+                                    <h3 class="experience-title">Tech Lead Intern</h3>
+                                    <p class="experience-company">Vishwam.AI</p>
+                                </div>
+                                <span class="experience-duration">May 2025-July 2025</span>
+                            </div>
+                            <ul class="experience-description">
+                                <li>Lead and developed AI pipelines using Python, NLP, and transformer architectures</li>
+                                <li>Guide and contributed to the training and fibe tuning of AI models</li>
+                                <li>Contributed to Indic language dataset curation, annotation and model evaluation</li>
+                                <li>Collaborated on building impactful AI solutions that support local languages and communities</li>
+                                <li>Participated in AI Systems that demonstrate social impact at scale</li>
+                            </ul>
+                            <div class="credential">Credential ID: BZiEKJeHb3</div>
+                            <a href="https://drive.google.com/file/d/1akJ8SbSNldZ09vTAb35Y1L7rZYehyFpR/view?usp=drive_link" target="_blank" class="certificate-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- virtual internships Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Virtual Internships</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div>
+                                    <h3 class="experience-title">Salesforce Developer</h3>
+                                    <p class="experience-company">Agent Blazer Champion Program</p>
+                                </div>
+                                <span class="experience-duration">May 2025 - June 2025</span>
+                            </div>
+                            <ul class="experience-description">
+                                <li>Completed 8-week virtual internship with hands-on Salesforce modules focused on automation, data management, and CRM best practices</li>
+                                <li>Streamlined processes by implementing innovative Salesforce solutions aligned with real-world business use cases</li>
+                                <li>Earned Superbadges in Apex Specialist, Object Relationships Unit, Security &amp; Performance Unit, Data Validation Unit, and Formulas Unit</li>
+                            </ul>
+                            <div class="credential">Credential ID: VIP-SDWAC-2025-4104</div>
+                            <a href="https://drive.google.com/file/d/1YzCGr90u7f9wmJTnrp1GVjwbwaevx2tx/view?usp=sharing" target="_blank" class="certificate-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div>
+                                    <h3 class="experience-title">AI-ML Virtual Internship</h3>
+                                    <p class="experience-company">Eduskills (in collaboration with Google)</p>
+                                </div>
+                                <span class="experience-duration">July 2025 - Sept 2025</span>
+                            </div>
+                            <ul class="experience-description">
+                                <li>Gained hands-on experience in Python, data preprocessing, supervised and unsupervised learning, and model evaluation techniques</li>
+                                <li>Developed and assessed predictive and classification models using NumPy, Pandas, Matplotlib, and Scikit-learn</li>
+                                <li>Worked on real-world datasets to generate insights and enhance model performance</li>
+                            </ul>
+                            <div class="credential">Credential ID: a43fbe5b55d76a085d4474d00378c83b</div>
+                            <a href="https://drive.google.com/file/d/1ISkkWiPnEXTPCqyA9NxUd9mbtntdJEF3/view?usp=sharing" target="_blank" class="certificate-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
                 <div class="project-card">
-                    <h3>SKILLTRADE </h3>
-                    <ul>
-                        <li>Designed and developed a personal portfolio website to showcase academic background, technical skills, and major projects.</li>
-                        <li>Implemented a responsive user interface with smooth navigation and a clean layout for optimal viewing across devices.</li>
-                        <li>Integrated GitHub repositories and social media links for easy access to work samples. Deployed the project on GitHub Pages.</li>
-                        <li>Built using HTML, CSS, JavaScript, PHP (backend), and MySQL/SQLite (database) with Visual Studio Code and XAMPP for local development.</li>
-                    </ul>
-                    <div class="tech-stack">
+                    <div class="project-header">
+                        <h3 class="project-title">Safe Nav</h3>
+                        <span class="project-category">Web Development</span>
+                    </div>
+                    <p class="project-description">Built a civic platform that converts citizen road feedback into real-time safety insights using web technologies and the Google Maps API. Designed dashboards and clustering logic to highlight high-risk areas, improving commuter safety and helping authorities prioritize urban repairs.</p>
+                    <div class="project-tech">
                         <span class="tech-tag">HTML</span>
                         <span class="tech-tag">CSS</span>
                         <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Google Maps API</span>
                         <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Skill Trade</h3>
+                        <span class="project-category">Web Development</span>
+                    </div>
+                    <p class="project-description">Developed a full-stack skill exchange platform using PHP and MySQL for backend logic and data management. Implemented interactive front-end features for skill listing, bookings, messaging, and user reviews.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
                         <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">AI-Driven Crop Planning</h3>
+                        <span class="project-category">Data Science</span>
+                    </div>
+                    <p class="project-description">Created an AI-powered crop recommendation system using Machine Learning models in Python. Designed a user interface for input collection and integrated a Flask backend to suggest top crops with a Crop Suitability Index and chatbot support.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Scikit-Learn</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <span class="project-category">Frontend Development</span>
+                    </div>
+                    <p class="project-description">Designed and deployed a responsive personal portfolio website to showcase technical skills, education, and projects. Utilized JavaScript for smooth animations, responsive layouts, and dynamic project displays.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Internships Section -->
-        <div id="internships" class="section">
-            <h2>Internships</h2>
-            <div class="internship-grid">
-                <div class="internship-card">
-                    <h3>TechLead Intern</h3>
-                    <div class="company">Swecha Organisation</div>
-                    <div class="internship-details">
-                        <p><strong>Duration:</strong> jul 2025 - aug 2025</p>
-                        <p><strong>Key Responsibilities:</strong></p>
-                        <ul style="margin-top: 10px; padding-left: 20px;">
-                            <li>Lead the development of Al pipelines using Python, NLP, and Transformer architectures.</li>
-                            <li>Guide and contribute to the training and fine-tuning of Al models</li>
-                            <li>Contribute to Indic language dataset curation, annotation, and model evaluation.</li>
-                            <li>Collaborate on building impactful Al solutions that support local languages and communities.</li>
-                            <li>Participate in deploying Al systems that demonstrate societal impact at scale.</li>
-                        </ul>
-                    </div>
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3 class="cert-name">Python Essentials 1 &amp; 2</h3>
+                    <p class="cert-issuer">Cisco</p>
                 </div>
-                <div class="internship-card">
-                    <h3>Software Developer Intern</h3>
-                    <div class="company">BlueStock Fintech</div>
-                    <div class="internship-details">
-                        <p><strong>Duration:</strong> 1 May 2025 to 30 June 2025</p>
-                        <p><strong>Key Responsibilities:</strong></p>
-                        <ul style="margin-top: 10px; padding-left: 20px;">
-                            <li>Develop a web application</li>
-                            <li>Hands-on experience in a dynamic fintech environment</li>
-                            
-                        </ul>
-                    </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3 class="cert-name">Java Fundamentals</h3>
+                    <p class="cert-issuer">Oracle</p>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3 class="cert-name">Database Programming with SQL</h3>
+                    <p class="cert-issuer">Oracle</p>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3 class="cert-name">Google AI Essentials</h3>
+                    <p class="cert-issuer">Coursera</p>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3 class="cert-name">Cybersecurity Analyst Job Simulation</h3>
+                    <p class="cert-issuer">Forage</p>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3 class="cert-name">Data Analytics &amp; Visualization Job Simulation</h3>
+                    <p class="cert-issuer">Forage</p>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3 class="cert-name">Codetantra Certifications</h3>
+                    <p class="cert-issuer">Codetantra</p>
+                    <p class="cert-subjects">C, Python, SQL, DSA, Java, Operating Systems</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Experience Section -->
-        <div id="experience" class="section">
-            <h2>Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <p>Looking for opportunities that enhance my technical experience.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Education Section -->
-        <div id="education" class="section">
-            <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Bachelor of Technology - Computer Science Engineering</h3>
-                    <div class="company">Vidya Jyothi Institute Of Technology</div>
-                    <div class="date">2023-2027</div>
-                    <p>CGPA: 9.4/10.0</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Intermediate Education</h3>
-                    <div class="company">Pragati Junior College</div>
-                    <div class="date">2021 - 2023</div>
-                    <p>Marks: 940/1000</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>School</h3>
-                    <div class="company">Little Flower High School</div>
-                    <div class="date">2011-2021</div>
-                    <p>CGPA: 10/10</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Certifications Section -->
-        <div id="certifications" class="section">
-            <h2>Certifications</h2>
-            <div class="cert-grid">
-                <div class="cert-item" >
-                    <h4>Python Essentials</h4>
-                    <p>Python essentials 1,2 by Cisco (April 2025)</p>
-                </div>
-                <div class="cert-item">
-                    <h4>Certificate of achievement</h4>
-                    <p>Certificate of achievement for qualifying as a finalist at sparkcamp conducted by Vishwam AI.</p>
-                </div>
-                <div class="cert-item">
-                    <h4>Google AI-Essentials</h4>
-                    <p>Google AI-Essentials by Google: Coursera (March 2025)</p>
-                </div>
-                <div class="cert-item">
-                    <h4>Cybersecurity Analyst</h4>
-                    <p>Cybersecurity Analyst job simulation by Tata : Forage(Aug,2024)</p>
-                </div>
-                <div class="cert-item">
-                    <h4>Data Analytics and visualization</h4>
-                    <p>Data Analytics and visualization job simulation by Accenture : Forage (Oct,2024)</p>
-                </div>
-                <div class="cert-item">
-                    <h4>Codetantra certificates </h4>
-                    <p>Codetantra certificates - C, python, SQL, DSA, Java</p>
-                </div>
-            </div>
-        </div>
-        <!-- Contact Section -->
-        <div id="contact" class="section">
-            <h2>Contact Me</h2>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
-                <div class="contact-info-section">
-                    <h3>Get In Touch</h3>
-                    <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and innovation.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-detail-item">
-                            <div class="contact-icon"></div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <a href="mailto:shruthiaeluka06@gmail.com">shruthiaeluka06@gmail.com</a>
-                            </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:shruthiaeluka06@gmail.com">shruthiaeluka06@gmail.com</a>
                         </div>
-                        
-                        <div class="contact-detail-item">
-                            <div class="contact-icon"></div>
-                            <div class="contact-text">
-                                <h4>LinkedIn</h4>
-                                <a href="https://linkedin.com/in/shruthi-aetala-9a7ba6318" target="_blank">linkedin.com/in/shruthi-aetala-9a7ba6318</a>
-                            </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <a href="tel:+917396830539">+91-7396830539</a>
                         </div>
-                        
-                        <div class="contact-detail-item">
-                            <div class="contact-icon"></div>
-                            <div class="contact-text">
-                                <h4>GitHub</h4>
-                                <a href="https://github.com/ShruthiReddy06" target="_blank">github.com/ShruthiReddy06</a>
-                            </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong>
+                            <p>Hyderabad, India</p>
                         </div>
-                        
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/shruthi-aeluka-952ba428a" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/ShruthiReddy06" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://shruthireddy06.github.io/portfolio/" target="_blank" class="social-link">
+                            <i class="fas fa-globe"></i> Portfolio
+                        </a>
                     </div>
                 </div>
-                
-                <div class="contact-form-section">
-                    <h3>Send Message</h3>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xpwokkjz" method="POST">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
             </div>
         </div>
-    </div>
-    <script src="script.js"></script>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+          
+
+        <div class="container">
+            
+            <div class="footer-bottom">
+                <p>Made with <span class="heart">❤️</span> by Shruthi Aeluka</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>

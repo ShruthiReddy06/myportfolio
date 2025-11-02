@@ -1,0 +1,158 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(59, 130, 246, 0.08);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(147, 51, 234, 0.08);stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgba(34, 197, 94, 0.08);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(6, 182, 212, 0.08);stop-opacity:1" />
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background gradient -->
+  <rect width="1920" height="1080" fill="url(#grad1)"/>
+
+  <!-- Organic blob shapes -->
+  <path d="M-100,300 Q200,150 400,300 T800,300 Q900,400 800,500 T400,500 Q200,450 -100,300 Z" 
+        fill="rgba(59, 130, 246, 0.1)" 
+        opacity="0.6">
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0,0; 50,30; 0,0"
+      dur="20s"
+      repeatCount="indefinite"/>
+  </path>
+
+  <!-- Floating circles -->
+  <circle cx="300" cy="200" r="80" fill="rgba(147, 51, 234, 0.12)" opacity="0.5">
+    <animate attributeName="cy" values="200;150;200" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="1600" cy="800" r="120" fill="rgba(245, 158, 11, 0.1)" opacity="0.6">
+    <animate attributeName="cy" values="800;750;800" dur="10s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1700" cy="300" r="60" fill="rgba(239, 68, 68, 0.1)" opacity="0.5">
+    <animate attributeName="cx" values="1700;1650;1700" dur="12s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Abstract curved lines -->
+  <path d="M100,600 Q400,500 700,600 T1300,600" 
+        stroke="rgba(33, 128, 141, 0.3)" 
+        stroke-width="3" 
+        fill="none"
+        stroke-linecap="round">
+    <animate attributeName="d" 
+             values="M100,600 Q400,500 700,600 T1300,600;
+                     M100,600 Q400,550 700,600 T1300,600;
+                     M100,600 Q400,500 700,600 T1300,600"
+             dur="15s" 
+             repeatCount="indefinite"/>
+  </path>
+
+  <!-- Geometric shapes -->
+  <rect x="150" y="800" width="100" height="100" 
+        fill="none" 
+        stroke="rgba(34, 197, 94, 0.2)" 
+        stroke-width="2"
+        rx="10"
+        transform="rotate(15 200 850)">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="15 200 850; 25 200 850; 15 200 850"
+      dur="10s"
+      repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Triangle -->
+  <polygon points="1500,150 1600,300 1400,300" 
+           fill="none" 
+           stroke="rgba(236, 72, 153, 0.2)" 
+           stroke-width="2">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 1500 225; 360 1500 225"
+      dur="30s"
+      repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Wavy shape at bottom -->
+  <path d="M0,900 Q300,850 600,900 T1200,900 T1920,900 L1920,1080 L0,1080 Z" 
+        fill="url(#grad2)" 
+        opacity="0.4"/>
+
+  <!-- Small decorative circles scattered -->
+  <circle cx="500" cy="450" r="15" fill="rgba(249, 115, 22, 0.15)">
+    <animate attributeName="r" values="15;20;15" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="1200" cy="500" r="20" fill="rgba(6, 182, 212, 0.12)">
+    <animate attributeName="r" values="20;25;20" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="900" cy="250" r="12" fill="rgba(34, 197, 94, 0.15)">
+    <animate attributeName="r" values="12;17;12" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Dotted pattern -->
+  <g opacity="0.3">
+    <circle cx="400" cy="100" r="4" fill="rgba(33, 128, 141, 0.4)"/>
+    <circle cx="450" cy="120" r="4" fill="rgba(33, 128, 141, 0.4)"/>
+    <circle cx="500" cy="90" r="4" fill="rgba(33, 128, 141, 0.4)"/>
+    <circle cx="550" cy="110" r="4" fill="rgba(33, 128, 141, 0.4)"/>
+  </g>
+
+  <!-- Abstract arc -->
+  <path d="M1400,700 A200,200 0 0,1 1700,900" 
+        stroke="rgba(147, 51, 234, 0.2)" 
+        stroke-width="3" 
+        fill="none"
+        stroke-linecap="round"
+        stroke-dasharray="10,10">
+    <animate attributeName="stroke-dashoffset" 
+             from="0" 
+             to="20" 
+             dur="2s" 
+             repeatCount="indefinite"/>
+  </path>
+
+  <!-- Plus signs -->
+  <g opacity="0.25">
+    <path d="M800,100 L800,140 M780,120 L820,120" 
+          stroke="rgba(33, 128, 141, 0.5)" 
+          stroke-width="3" 
+          stroke-linecap="round"/>
+    <path d="M1300,400 L1300,440 M1280,420 L1320,420" 
+          stroke="rgba(236, 72, 153, 0.5)" 
+          stroke-width="3" 
+          stroke-linecap="round"/>
+  </g>
+
+  <!-- Spiral element -->
+  <path d="M250,950 Q260,940 270,950 T290,950 Q300,960 310,950" 
+        stroke="rgba(245, 158, 11, 0.3)" 
+        stroke-width="2" 
+        fill="none"
+        stroke-linecap="round">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 280 950; 360 280 950"
+      dur="20s"
+      repeatCount="indefinite"/>
+  </path>
+
+</svg>
